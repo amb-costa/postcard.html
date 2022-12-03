@@ -2,17 +2,18 @@ body {
 	background: black;
 }
 
-* {
-	border: 1px dashed red;
-	min-height: 10px;
-}
-
 .postcard {
 	background: white;
+	background-image: url("https://images.ehive.com/accounts/5026/objects/images/1jel2u6_5vec_l.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 400px;
 	height: 300px;
 	margin: auto;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Great+Vibes&family=Inconsolata&family=Roboto+Mono&display=swap");
 
 .postcard-header {
 	display: flex;
@@ -22,47 +23,50 @@ body {
 .postcard-header img {
 	width: 60px;
 	height: 60px;
-	margin-right: 40px !important;
-	margin-top: 15px !important;
+	margin: auto;
 	object-fit: cover;
 }
 
 .postcard-header h1 {
-	width: 350px;
-	height: 30px;
-	font-size: 30px;
-	margin-left: 30px !important;
-	padding: 5px;
+	height: 60px;
+	font-family: Great Vibes;
+	font-weight: bold;
+	font-size: 60px;
+	color: #f08080;
+	margin: auto;
+	margin-left: 15px !important;
 }
 
 .postcard-body {
 	display: flex;
-	height: 170px;
-}
-
-.body-left,
-.body-right {
-	padding: 10px;
+	height: 180px;
 }
 
 .body-left {
-	padding-left: 25px;
+	height: 170px;
+	font-family: Caveat;
+	color: #cd5c5c;
+	font-size: 17px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
 }
 
-.body-right {
-	font-size: 15px;
+.text-p > p {
+	background-color: darkgray;
+	opacity: 0.9;
+	padding: 3px;
+	margin-top: 10px;
 }
 
 input {
-	border: none;
-	border-bottom: grey;
-	text-decoration: underline;
-	opacity: 0.4;
-	padding-top: 15px;
-}
-
-p {
 	font-size: 15px;
+	font-family: Inconsolata;
+	margin-top: 15px;
+	padding: 7px;
+	background-color: darkgray;
+	opacity: 0.8;
+	margin-right: 10px;
 }
 
 .postcard-footer {
@@ -71,7 +75,11 @@ p {
 
 button {
 	background-color: darkgrey;
+	font-family: Roboto Mono;
+	font-size: 10px;
 	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin: auto;
-	margin-top: 5px !important;
+	margin-top: 0px !important;
 }
